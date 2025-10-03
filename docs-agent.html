@@ -642,7 +642,7 @@
                 <p>Ensure that billing is enabled for your project. This is a non-negotiable step, as most of the services we'll use (Vertex AI Search and Gemini) are not part of the free tier. Visit the <a href="https://cloud.google.com/billing/docs/how-to/verify-billing-enabled" target="_blank">official guide</a> to learn how to check if billing is enabled on a project.</p>
 
                 <div class="warning-box">
-                    <strong>Note:</strong> Skip this step if you're using cloud credits.
+                    Skip this step if you're using cloud credits.
                 </div>
 
                 <h3>3. Enable Required APIs</h3>
@@ -653,7 +653,7 @@
                 </ul>
 
                 <div class="info-box">
-                    <strong>Tip:</strong> We've listed all the necessary APIs here to prevent issues later on. Make sure both are enabled before proceeding.
+                    We've listed all the necessary APIs here to prevent issues later on. Make sure both are enabled before proceeding.
                 </div>
             </div>
 
@@ -672,11 +672,11 @@
                 <h2>Create a Cloud Storage (GCS) Bucket</h2>
                 <p>To <a href="https://cloud.google.com/storage/docs/creating-buckets#console" target="_blank">create a Cloud Storage bucket</a>:</p>
                 <ul>
-                    <li>In the <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>, search for Cloud Storage and click Create bucket</li>
-                    <li>Give your bucket a globally unique name (e.g., my-api-docs-workshop-2025). Click on Continue</li>
-                    <li>In the Location Type, select Multi-Region. In the drop down, make sure to select the option <strong>us (multiple regions in United States)</strong></li>
-                    <li>Leave the rest of the options at their default settings and click Create bucket</li>
-                    <li>If you're prompted to Prevent public access, click Confirm</li>
+                    <li>In the <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>, search for Cloud Storage and click Create bucket.</li>
+                    <li>Give your bucket a globally unique name (e.g., my-api-docs-workshop-2025). Click on Continue.</li>
+                    <li>In the Location Type, select Multi-Region. In the drop down, make sure to select the option <strong>us (multiple regions in United States).</strong></li>
+                    <li>Leave the rest of the options at their default settings and click Create bucket.</li>
+                    <li>If you're prompted to Prevent public access, click Confirm.</li>
                 </ul>
 
                 <h2>Upload your documentation</h2>
@@ -687,7 +687,7 @@
                 </ul>
 
                 <div class="info-box">
-                    <strong>Success!</strong> Your API documentation is now securely stored and ready to be processed into a searchable knowledge base.
+                    Your API documentation is now securely stored and ready to be processed into a searchable knowledge base.
                 </div>
             </div>
 
@@ -703,21 +703,21 @@
 
                 <h2>Enable AI Applications</h2>
                 <ol>
-                    <li>In the <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>, search for AI Applications in the search bar and navigate to the page</li>
-                    <li>You'll be prompted to activate the API. Click Continue to proceed</li>
+                    <li>In the <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>, search for AI Applications in the search bar and navigate to the page.</li>
+                    <li>You'll be prompted to activate the API. Click Continue to proceed.</li>
                 </ol>
 
                 <h2>Configure your data store</h2>
                 <ol>
-                    <li>Once on the AI Applications page, click on <strong>Data Stores</strong> in the left-hand navigation menu</li>
-                    <li>Click <strong>Create data store</strong></li>
-                    <li>For the Source page, select <strong>Cloud Storage</strong> as your data source</li>
-                    <li>Click Browse and navigate to your docs folder inside the GCS bucket you created in the previous step, then Select the openapi.json file. Alternatively, you can enter the full path directly in the gs:// field</li>
-                    <li>Select <strong>Unstructured documents (PDF, HTML, TXT and more)</strong> as the kind of data you are importing. This tells Vertex AI to intelligently parse and extract text from your files, even from complex formats like JSON</li>
-                    <li>For Synchronization frequency, select <strong>One-time</strong>. This is sufficient for the workshop since we don't expect the documentation to change</li>
-                    <li>Click Continue. Leave the Location as <strong>global</strong> for this workshop to ensure maximum availability of all search and answering services</li>
-                    <li>Enter a name for your data store (e.g., petstore-docs-agent)</li>
-                    <li>Click <strong>Create</strong></li>
+                    <li>On the AI Applications page, click on <strong>Data Stores</strong> in the left-hand navigation menu.</li>
+                    <li>Click <strong>Create data store.</strong></li>
+                    <li>For the Source page, select <strong>Cloud Storage</strong> as your data source.</li>
+                    <li>Click Browse and navigate to your docs folder inside the GCS bucket you created in the previous step, then Select the openapi.json file. Alternatively, you can enter the full path directly in the gs:// field.</li>
+                    <li>Select <strong>Unstructured documents (PDF, HTML, TXT and more)</strong> as the kind of data you are importing. This tells Vertex AI to intelligently parse and extract text from your files, even from complex formats like JSON.</li>
+                    <li>For Synchronization frequency, select <strong>One-time</strong>. This is sufficient for the workshop since we don't expect the documentation to change.</li>
+                    <li>Click Continue. Leave the Location as <strong>global</strong> for this workshop to ensure maximum availability of all search and answering services.</li>
+                    <li>Enter a name for your data store (e.g., petstore-docs-agent).</li>
+                    <li>Click <strong>Create.</strong></li>
                 </ol>
 
                 <div class="warning-box">
@@ -1027,7 +1027,7 @@
 
         // Share on Twitter
         function shareTweet() {
-            const text = encodeURIComponent('🎉 I just completed the API Documentation Agent workshop! Built a RAG-powered docs agent with Gemini and Vertex AI Search. Thanks @funkeolasupo! #GoogleCloud #VertexAI #RAG #AI');
+            const text = encodeURIComponent('🎉 I just completed the API Documentation Agent workshop! Built a RAG-powered docs agent with Gemini and Vertex AI Search. Thanks @OlasupoFunke! #GoogleCloud #VertexAI #RAG #AI');
             const url = 'https://twitter.com/intent/tweet?text=' + text;
             window.open(url, '_blank', 'width=550,height=420');
         }
